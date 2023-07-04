@@ -48,5 +48,17 @@
     box-shadow: 2px 1px 2px black;
 
 }
+img.slider-img{
+    height:400px !important;
+}
+img.trend-img{
+    height:100px !important;
+}
+img.detail-img{
+    height:200px !important;
+}
+.search-box{
+    width:500px;
+}
 </style>
 </html>

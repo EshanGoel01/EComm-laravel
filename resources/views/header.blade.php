@@ -13,8 +13,10 @@
             <a class="nav-link active">Orders</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" action="/search" role="search">
+          <div class="form-group">
+            <input class="form-control me-2 search-box" name="query" type="search" placeholder="Search" aria-label="Search">
+          </div>
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <ul class="nav navbar-nav navbar-right mx-4">
