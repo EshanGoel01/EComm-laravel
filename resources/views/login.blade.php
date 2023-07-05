@@ -1,9 +1,9 @@
 @extends('master')
 @section('content')
-<div class="container my-5 custom-login">
+<div class="container my-5 custom-login kkk">
     <div class="row">
         <div class="col-6">
-            <form class="login-form" action="/login"  method="POST">
+            <form class="login-form " action="/login"  method="POST">
                 <div class="mb-3">
                   @csrf
                   <label for="exampleInputEmail1" class="form-label">Email address</label>

@@ -54,7 +54,11 @@ body {
     gap: 100px 50px;
     padding: 100px 50px;
 }
-
+.kkk{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 .container .card {
     position: relative;
     display: flex;

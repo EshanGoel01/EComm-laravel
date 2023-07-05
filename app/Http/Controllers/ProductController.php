@@ -16,7 +16,7 @@ class ProductController extends Controller
     //
     function index()
     {
-        $data= Product::all();
+        $data= Product::inRandomOrder()->get();        ;
         return view('product',['products'=>$data]);
     }
 
@@ -29,6 +29,7 @@ class ProductController extends Controller
     {
          $data=Product::
         where('name','like','%'.$req->input('query').'%')
+        ->inRandomOrder()
         ->get();
         return view('search',['products'=>$data]);
 
