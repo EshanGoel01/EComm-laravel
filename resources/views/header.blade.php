@@ -18,7 +18,7 @@
             <a class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active">Orders</a>
+            <a class="nav-link" href="/myorders">Orders</a>
           </li>
         </ul>
         <form class="d-flex" action="/search" role="search">
@@ -46,6 +46,11 @@
             <li>
               <button class="btn btn-dark">
                 <a class="dropdown-item" href="/login">Login</a>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-dark">
+                <a class="dropdown-item" href="/register">Register</a>
               </button>
             </li>
             @endif

@@ -68,6 +68,7 @@ img.detail-img{
 }
 .cart-list-divider{
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 </style>
 </html>
