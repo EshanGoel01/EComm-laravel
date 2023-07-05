@@ -21,9 +21,9 @@
                 <h1>{{$product['name']}} </h1>
                 <h6>{{$product['category']}}</h6>
                 <hr>
-                <h3>Price: {{$product['price']}}</h3>
+                <h3>Rs. {{$product['price']}}</h3>
                 <hr>
-                <h6>{{$product['name']}}- {{$product['description']}}</h6>
+                <h6>{{$product['name']}} : {{$product['description']}}</h6>
             </div>
         </div>
         <div class="col-sm-6">
