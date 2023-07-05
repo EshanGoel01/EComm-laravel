@@ -1,4 +1,4 @@
-@extends('master')
+@extends('masterf')
 @section('content')
 <div class=" customddd-product">
     <div class="slidingg">
@@ -39,7 +39,7 @@
 
 
       <div class="cxc">
-        <h1 class="trend-head">Trending</h1>
+        <h1 class="trend-head"><u>Trending</u></h1>
         <div class="container my-1">
           @foreach ($products as $item)     
           <a href="detail/{{$item['id']}}">

@@ -12,7 +12,7 @@
 <body>
     {{ View::make('header') }}
     @yield('content')
-    {{-- {{ View::make('footer') }} --}}
+    {{ View::make('footer') }}
 
 </body>
 <style>
@@ -222,7 +222,6 @@ img.trend-img{
 }
 img.detail-img{
     height:350px !important;
-    max-width: 400px;
 }
 .search-box{
     width:500px;
