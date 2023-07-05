@@ -32,6 +32,12 @@
     background-color: rgba(41, 39, 39, 0.3);
     box-shadow: 0 5px 30px black;
 }
+.customer-login {
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgba(41, 39, 39, 0.3);
+    box-shadow: 0 5px 30px black;
+}
 .login-form{
     padding: 7px;
     margin: 9px auto;
@@ -52,13 +58,16 @@ img.slider-img{
     height:400px !important;
 }
 img.trend-img{
-    height:100px !important;
+    height:110px !important;
 }
 img.detail-img{
-    height:200px !important;
+    height:350px !important;
 }
 .search-box{
     width:500px;
+}
+.cart-list-divider{
+    margin-bottom: 30px;
 }
 </style>
 </html>
