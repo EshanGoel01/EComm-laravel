@@ -2,6 +2,7 @@
 @section('content')
 <div class="customer-product mx-5">
     <div class="col-sm-10 my-5">
+        <h1>Bill:</h1>
         <div class="login-form">
             <table class="table">
                 <tr>
@@ -27,15 +28,16 @@
     <div>
         <form action="/orderplace" method="POST">
             @csrf
+            <h4>Address:</h4>
             <div class="form-group">
               <textarea name="address" id="address" cols="50" rows="5" placeholder="Enter your address" ></textarea>
             </div>
             <br><br>
+            <h4>Payment Method: </h4>
             <div class="customer-form">
                 <div class="form-group">
-                    <label for="payment">Payment Method: </label><br>
-                    <input type="radio" value="cash" name="payment"><span>Online Payment</span><br>
-                    <input type="radio" value="cash" name="payment"><span>EMI Payment</span><br>
+                    <input type="radio" value="online" name="payment"><span>Online Payment</span><br>
+                    <input type="radio" value="emi" name="payment"><span>EMI Payment</span><br>
                     <input type="radio" value="cash" name="payment"><span>Cash On Delivery</span><br><br>
       
                   </div>

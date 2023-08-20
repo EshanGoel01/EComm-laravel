@@ -10,6 +10,7 @@ use Illuminate\Contracts\Session\Session as SessionSession;
 use Illuminate\Support\Facades\Session;
 use Symfony\Component\HttpFoundation\Session\Session as HttpFoundationSessionSession;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
@@ -28,7 +29,7 @@ class ProductController extends Controller
     function search(Request $req)
     {
          $data=Product::
-        where('name','like','%'.$req->input('query').'%')
+        where('tags','like','%'.$req->input('query').'%')
         ->inRandomOrder()
         ->get();
         return view('search',['products'=>$data]);
@@ -83,6 +84,21 @@ class ProductController extends Controller
     }
     function orderPlace(Request $req)
     {
+        // $validator = Validator::make($req->all(), [
+        //     'address' => 'required',
+        //     'payment_method' => 'required',
+        // ]);
+        // $messages = [
+        //     'address.required' => 'We need to know your address!',
+        //     'payment_method.required' => 'Payment Method required',
+        // ];
+ 
+        // if ($validator->fails()) {
+        //     return redirect('ordernow')
+        //                 ->withErrors($validator)
+        //                 ->withInput();
+        // }
+ 
 
         $userId=Session::get('user')['id'];
         $allCart= Cart::where('user_id',$userId)->get();

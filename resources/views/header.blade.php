@@ -29,6 +29,9 @@
           </div>
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        <button class="btn btn-outline-success">
+          <a class="dropdown-item" href="/image">Image Search</a>
+        </button>
         <ul class="nav navbar-nav navbar-right mx-4">
             @if(Session::has('user'))
             <li class="nav-item mx-4">

@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Session;
 */
 
 Route::view('/login', "login");
+Route::view('/image', "image");
 Route::view('/register', "register");
 Route::get('/logout',function(){
     Session::forget('user');
